@@ -42,7 +42,7 @@ async function run() {
 
      app.get('/reviews', async(req, res) =>{
         const body = req.body;
-        console.log(body);
+  
         const result = await ReviewData.find(body).toArray();
         res.send(result)
      })
